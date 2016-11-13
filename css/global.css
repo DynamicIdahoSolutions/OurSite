@@ -1,0 +1,30 @@
+#headerLogo {
+	max-height: 100px;
+}
+
+#footerA {
+	color: #00aef0;
+}
+
+.homeCarousel img {
+	max-height: 700px;
+	width: 1903px;
+}
+
+#homeParaRow {
+	background-color: rgba(255,255,255,.4);
+	border-radius: 25px;
+}
+
+.AboutTag a{
+	margin:5px; 
+	color:#7e7e7e; 
+	padding:5px; 
+	float:left; 
+	border:1px solid #7e7e7e;
+	} 
+
+.AboutTag a:hover{
+	color:#00aef0;
+	border:1px solid #00aef0;
+	}

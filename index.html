@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="di">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta property="og:image" content="images/site/bg_logo.jpg" />
+    <link href="images/site/favicon.ico" rel="icon" type="image/x-icon" />
+    <title update-title>Dynamic Idaho</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link href="lib/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css">
+    <!-- animate css for wow js -->
+    <link rel="stylesheet" type="text/css" href="lib/css/animate.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,800italic,800,600italic,600,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- Main Template CSS -->
+    <link href="lib/css/style.css" rel="stylesheet">
+    <!-- Template Responsive CSS -->
+    <link href="lib/css/responsive.css" rel="stylesheet">
+    <!-- Template Skins Style-->
+    <link rel="stylesheet" type="text/css" href="lib/css/blue.css" title="blue" media="all" />
+    <!-- Custom CSS files-->
+    <link rel="stylesheet" href="css/global.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header" class="head">
+        <div class="top-header">
+            <div class="container">
+                <div class="row ">
+                    <ul class="contact-detail2 col-sm-6 pull-left">
+                        <li> <a href="#/contact"><i class="fa fa-mobile"></i>Call US + 1 (208) 850-3370</a> </li>
+                        <li> <a href="#/contact"><i class="fa fa-envelope-o"></i> dynamicidaho@gmail.com</a> </li>
+                    </ul>
+                    <div class="social-links col-xs-12 col-sm-6 pull-right">
+                        <ul class="social-icons pull-right">
+                            <li> <a href="https://www.facebook.com/DynamicIdaho" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+                            <li> <a href="https://twitter.com/Dynamic_Idaho" target="_blank"><i class="fa fa-twitter"></i></a> </li>
+                            <li> <a href="https://github.com/DynamicIdahoSolutions" target="_blank"><i class="fa fa-github"></i></a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-1">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/site/logo2.png" alt="dynamic idaho logo" id="headerLogo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeIn">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a ng-class="{ active: isActive('/home') }" href="#/home">Home</a></li>
+                        <li><a ng-class="{ active: isActive('/about') }" href="#/about">About</a></li>
+                        <li><a ng-class="{ active: isActive('/services') }" href="#/services">Services</a></li>
+                        <li><a ng-class="{ active: isActive('/portfolio') }" href="#/portfolio">Portfolio</a></li>
+                        <li><a ng-class="{ active: isActive('/contact') }" href="#/contact">Contact</a></li>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- content injected by angular/routes -->
+    <div ui-view></div>
+
+
+
+
+    <!-- footer -->
+    <section id="footer-top" class="footer-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-lg-3">
+        <div class="footer-top-box">
+          <h4>About Us</h4>
+          <p>We are a growing web dev company based out of beautiful Boise ID. We strive to deliver a product that leaves clients satisfied, and we do it in a timely manner.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3">
+        <div class="footer-top-box">
+          <h4>Latest Projects</h4>
+          <ul>
+            <li><a href="">Project 1</a></li>
+            <li><a href="">Project 2</a></li>
+            <li><a href="">Project 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3">
+        <div class="footer-top-box">
+          <h4>Tags</h4>
+          <div class="tag"><a>Angular JS</a></div>
+          <div class="tag"><a>PHP</a></div>
+          <div class="tag"><a>Firebase</a></div>
+          <div class="tag"><a>JQuery</a></div>
+          <div class="tag"><a>Meteor JS</a></div>
+          <div class="tag"><a>HTML</a></div>
+          <div class="tag"><a>CSS</a></div>
+          <div class="tag"><a>JavaScript</a></div>
+          <div class="tag"><a>SQL</a></div>
+          <div class="tag"><a>Photoshop</a></div>
+          <div class="tag"><a>Illustrator</a></div>
+          <div class="tag"><a>ASP.NET</a></div>
+          <div class="tag"><a>SEO</a></div>
+          <div class="tag"><a>Bootstrap 3</a></div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3">
+        <div class="footer-top-box">
+          <h4>Contact us</h4>
+          <p>
+            <b>Phone: </b> 1(208) 850-3370<br/>
+            <b>Mail: </b> dynamicidaho@gmail.com<br/>
+            or visit our <a href="#/contact" id="footerA">contact</a> page! </p>
+        </div>
+        <div class="footer-top-box">
+          <h4>Subscribe</h4>
+          <div class="cs-form">
+            <form ng-controller="newsLetter">
+              <div class="input-holder">
+                <input type="email" placeholder="Enter Valid Email Address" ng-model="email">
+                <label> <i class="fa fa-location-arrow fa-2x"></i>
+                  <input class="submit-bgcolor" type="submit" value="submit" ng-click="newsLetterGo(email)">
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="footer-bottom" class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-lg-9">
+        <div class="copyright">Copyright &copy; 2016. All Rights Reserved</div>
+      </div>
+      <div class="col-lg-3">
+        <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/Dynamic_Idaho"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/DynamicIdaho"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://github.com/DynamicIdahoSolutions"><i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- angular -->
+    <script src="lib/js/angular.min.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <!-- jQuery -->
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/jquery.plugin.min.js"></script>
+    <script src="lib/js/jquery.isotope.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/bootstrap-dropdownhover.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- angular routes -->
+    <script src="lib/js/angular-ui-router.min.js"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+    <!-- controllers -->
+    <script src="js/controllers/controller.js"></script>
+    <!-- template -->
+    <script src="lib/js/waypoints.min.js"></script>
+    <script src="lib/js/jquery.counterup.min.js"></script>
+    <!-- <script src="lib/js/main.js"></script> -->
+    <!-- wow js -->
+    <script src="lib/js/wow.min.js"></script>
+    <!-- inject wow js -->
+    <script>
+    new WOW().init();
+    </script>
+</body>
+
+</html>
